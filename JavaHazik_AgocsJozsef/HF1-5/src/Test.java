@@ -21,21 +21,21 @@ public class Test {
         if(num1.getDiscriminant() > 0)
             System.out.println(num1);
         else if(num1.getDiscriminant() == 0 )
-            System.out.println("Az egyenlet gyöke: x= "+ num1.getRoot2() +"");
+            System.out.println("Az egyenlet gyöke: x= "+ num1.getRoot2());
         else
             System.out.println("The equation has no roots.");
         
         if(num2.getDiscriminant() > 0)
             System.out.println(num2);
         else if(num2.getDiscriminant() == 0)
-            System.out.println("Az egyenlet gyöke: x= "+ num2.getRoot2() +"");
+            System.out.println("Az egyenlet gyöke: x= "+ num2.getRoot2());
         else
             System.out.println("The equation has no roots.");
     
         if(num3.getDiscriminant() > 0)
             System.out.println(num3);
         else if(num3.getDiscriminant() == 0)
-            System.out.println("Az egyenlet gyöke: x= "+ num3.getRoot2() +"");
+            System.out.println("Az egyenlet gyöke: x= "+ num3.getRoot2());
         else
             System.out.println("The equation has no roots.");
     }

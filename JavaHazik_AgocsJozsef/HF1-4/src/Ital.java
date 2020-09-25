@@ -8,7 +8,8 @@ import java.util.Objects;
  * and open the template in the editor.
  */
 /**
- *
+ *  Ez az osztály italok összehasonlítására szolgál, továbbá lehetőséget nyújt
+ * az ár átváltására forintból euróba.
  * @author József / WKO7VX
  */
 public class Ital {

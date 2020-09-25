@@ -6,41 +6,33 @@
 
 /**
  * Ez az osztály egy xy kordináta rendszert hivatott modellezni.
+ *
  * @author József / WKO7VX
  */
 public class Pont {
-    
-    private double pontX;
-    private double pontY;
-    
-    public Pont()
-    {
-        this.pontX=0;
-        this.pontY=0;
-        
+
+    private double x;
+    private double y;
+
+    public Pont(double x, double y) {
+        this.x = x;
+        this.y = y;
     }
-    public Pont(double pontX, double pontY)
-    {
-        this.pontX=pontX;
-        this.pontX=pontY;
+
+    public double getX() {
+        return x;
     }
-    
-    public double getX()
-    {
-        return this.pontX;
+
+    public void setX(double x) {
+        this.x = x;
     }
-    public double getY()
-    {
-        return this.pontY;
+
+    public double getY() {
+        return y;
     }
-    
-    public void setX(double pontCopyX)
-    {
-        this.pontX=pontCopyX;
+
+    public void setY(double y) {
+        this.y = y;
     }
-    public void setY(double pontCopyY)
-    {
-        this.pontY=pontCopyY;
-    }
-    
+
 }

@@ -5,14 +5,14 @@
  */
 
 /**
- * Ez az osztály a már meglévő Ital osztály tesztelését hivatott elvégezni
+ * Ez az osztály a már meglévő Ital osztály tesztelését hivatott elvégezni.
  * @author József / WKO7VX
  */
 public class Main {
 
     public static void main(String[] args) {
         Ital elso = new Ital("Cola", "5dl");
-        Ital masodik = new Ital("Cola", "5dl");
+        Ital masodik = new Ital("Fanta", "5dl");
         System.out.println(Ital.getÁr()+"Ft");
         Ital.setÁr(450);
         System.out.println(Ital.getÁr()+"Ft");
