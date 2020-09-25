@@ -7,29 +7,22 @@ import java.util.Objects;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
- * @author Jocó
+ * @author József / WKO7VX
  */
 public class Ital {
- protected String név;
- protected String kiszerelés;
- private static int ár=10;
- protected Date gyártásiDátum;
- 
- public Ital(){
-     this.név="none";
-     this.kiszerelés="none";
-     this.gyártásiDátum = new Date();
- }
+
+    protected String név;
+    protected String kiszerelés;
+    private static int ár = 10;
+    protected Date gyártásiDátum;
 
     public Ital(String név, String kiszerelés) {
         this.név = név;
         this.kiszerelés = kiszerelés;
         this.gyártásiDátum = new Date();
     }
- 
 
     public String getNév() {
         return név;
@@ -46,10 +39,15 @@ public class Ital {
     public void setKiszerelés(String kiszerelés) {
         this.kiszerelés = kiszerelés;
     }
-
     
-    public static double getÁrEuróban(){
-        return Ital.ár*0.0028;
+    /**
+     * Ez a statikus metódus átváltja a forintban megadott árat euróba.
+     * Jelenlegi árfolyam: 1 HUF = 0.0028 Eur
+     * @return - az átváltott érték 
+     */
+
+    public static double getÁrEuróban() {
+        return Ital.ár * 0.0028;
     }
 
     public static int getÁr() {
@@ -59,24 +57,19 @@ public class Ital {
     public static void setÁr(int ár) {
         Ital.ár = ár;
     }
-    
 
     @Override
+    public String toString() {
+        return this.név+", "+this.kiszerelés+", "+Ital.ár+"Ft";
+    }
+    
+    @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
+        if (obj == null || !(obj instanceof Ital)) {
             return false;
         }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Ital other = (Ital) obj;
-        if (!Objects.equals(this.név, other.név) || !Objects.equals(this.kiszerelés, other.kiszerelés)) {
-            return false;
-        }
-        return true;
+        Ital tmp = (Ital) obj;
+        return this.getNév().equals(tmp.getNév()) && this.getKiszerelés().equals(tmp.getKiszerelés()) && this.getÁr() == tmp.getÁr();
     }
 
     @Override
@@ -86,6 +79,5 @@ public class Ital {
         hash = 53 * hash + Objects.hashCode(this.kiszerelés);
         return hash;
     }
-    
-    
+
 }
