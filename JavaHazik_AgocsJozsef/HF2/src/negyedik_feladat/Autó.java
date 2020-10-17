@@ -41,9 +41,23 @@ public class Autó {
     }
 
     @Override
+    public int hashCode() {
+        int hash = 7;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null || !(obj instanceof Autó)) {
+            return false;
+        }
+
+        return this.rendszám.equals(((Autó) obj).rendszám);
+    }
+
+    @Override
     public String toString() {
         return "Autó rendszama: " + this.rendszám + ", Teljesítmény: " + this.motorTeljesítmény;
     }
-
 
 }

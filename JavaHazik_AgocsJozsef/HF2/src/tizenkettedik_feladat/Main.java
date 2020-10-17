@@ -35,10 +35,8 @@ public class Main {
             if(t[h].getName().compareTo(hely) == 0)
                 break;
             else
-                System.out.println(t[h]);
-            
+                System.out.println(t[h]);       
         }
-
     }
 
     public static void main(String[] args) {
@@ -55,7 +53,6 @@ public class Main {
         int i = 0;
 
         while (i < db) {
-
             sor = sc.nextLine();
             String[] tokens = sor.split(":");
             Varos t = new Varos(tokens[0], Integer.parseInt(tokens[1]));
@@ -69,5 +66,4 @@ public class Main {
         else
             rendezesKereses(v, keresettVaros);
     }
-
 }

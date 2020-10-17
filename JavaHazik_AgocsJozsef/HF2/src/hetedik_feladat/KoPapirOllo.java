@@ -35,7 +35,7 @@ public class KoPapirOllo {
 
                 if (jatekos_input.equals(cpu)) {
                     System.out.println("Döntetlen!");
-                } else if ((jatekos_input.equals("kő") && t==2) || (jatekos_input.equals("papír") &&  t==0) || (jatekos_input.equals("olló") && t==1)) {
+                } else if ((jatekos_input.equals("kő") && t == 2) || (jatekos_input.equals("papír") && t == 0) || (jatekos_input.equals("olló") && t == 1)) {
                     System.out.println("Játékos nyert! Játékos:" + jatekos_input + " | Gép:" + cpu);
                 } else {
                     System.out.println("A gép nyert! Játékos:" + jatekos_input + " | Gép:" + cpu);

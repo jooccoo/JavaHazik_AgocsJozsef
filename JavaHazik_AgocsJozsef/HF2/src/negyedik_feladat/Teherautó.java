@@ -34,20 +34,11 @@ public class Teherautó extends Autó{
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
+        if (obj == null || !(obj instanceof Teherautó)) {
             return false;
         }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Teherautó other = (Teherautó) obj;
-        if (this.maxSzállíthatóTeher != other.maxSzállíthatóTeher) {
-            return false;
-        }
-        return true;
+
+        return super.getRendszám().equals(((Teherautó) obj).getRendszám());
     }
     
     

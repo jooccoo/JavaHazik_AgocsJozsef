@@ -12,6 +12,7 @@ import java.util.Objects;
  * @author Jocó
  */
 public class Szotar {
+
     private String angol;
     private String magyar;
 
@@ -36,18 +37,14 @@ public class Szotar {
 
     @Override
     public boolean equals(Object obj) {
-       if (obj==null  || !(obj instanceof Szotar))
-        {
-       return false;
+        if (obj == null || !(obj instanceof Szotar)) {
+            return false;
         }
-        
-        return this.angol.equals(((Szotar)obj).angol);
+        return this.angol.equals(((Szotar) obj).angol);
     }
 
     @Override
     public String toString() {
-        return this.angol+":"+this.magyar;
+        return this.angol + ":" + this.magyar;
     }
-    
-    
 }

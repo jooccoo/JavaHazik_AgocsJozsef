@@ -27,17 +27,14 @@ public class Main {
                     a[i] = a[j];
                     a[j] = tmp;
                 }
-
             }
         }
-
     }
-    
-     public static void kiir(Szotar[] t) {
+
+    public static void kiir(Szotar[] t) {
         for (int i = 0; i < t.length; i++) {
             System.out.println(t[i]);
         }
-
     }
 
     public static void main(String[] args) {
@@ -45,19 +42,13 @@ public class Main {
         int n = Integer.parseInt(sc.nextLine());
         Szotar[] t = new Szotar[n];
         int i = 0;
-
         String sor = null;
-
         while (i < n) {
-
             sor = sc.nextLine();
-
             String[] tokens = sor.split(":");
-
             Szotar h = new Szotar(tokens[0], tokens[1]);
             t[i] = h;
             i++;
-
         }
         rendez(t);
         kiir(t);

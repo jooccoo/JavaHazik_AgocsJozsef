@@ -12,6 +12,7 @@ import java.util.Objects;
  * @author Jocó
  */
 public class Nebulok {
+
     private String név;
     private String előtte;
 
@@ -27,7 +28,7 @@ public class Nebulok {
     public String getElőtte() {
         return előtte;
     }
-    
+
     @Override
     public String toString() {
         return this.név + ", előtte: " + this.előtte;
@@ -41,16 +42,9 @@ public class Nebulok {
 
     @Override
     public boolean equals(Object obj) {
-        if (obj==null  || !(obj instanceof Nebulok))
-        {
-       return false;
+        if (obj == null || !(obj instanceof Nebulok)) {
+            return false;
         }
-        
-        return this.előtte.equals(((Nebulok)obj).név);
+        return this.előtte.equals(((Nebulok) obj).név);
     }
-    
-    
-    
-    
-    
 }

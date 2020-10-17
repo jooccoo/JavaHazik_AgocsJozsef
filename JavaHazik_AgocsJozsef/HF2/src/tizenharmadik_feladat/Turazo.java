@@ -10,7 +10,7 @@ package tizenharmadik_feladat;
  * @author Jocó
  */
 public class Turazo {
-    
+
     private String nev;
     private String utvonal;
     private int kek;
@@ -76,6 +76,5 @@ public class Turazo {
     public String toString() {
         return this.nev;
     }
-    
-    
+
 }

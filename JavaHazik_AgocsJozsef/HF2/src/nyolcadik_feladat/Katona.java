@@ -52,10 +52,7 @@ public class Katona {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || getClass() != obj.getClass() ) {
+        if (obj == null || !(obj instanceof Katona)) {
             return false;
         }
         final Katona other = (Katona) obj;

@@ -54,6 +54,6 @@ public class Turak {
 
     @Override
     public String toString() {
-        return this.ev + ";"+ this.honap + ";"+this.nap+ ";"+ this.tura_neve;
+        return this.ev + ";" + this.honap + ";" + this.nap + ";" + this.tura_neve;
     }
 }

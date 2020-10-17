@@ -10,6 +10,7 @@ package nyolcadik_feladat;
  * @author Jocó
  */
 public class Nyilas extends Katona {
+
     private int lőtáv;
 
     public int getLőtáv() {
@@ -29,7 +30,6 @@ public class Nyilas extends Katona {
         this.lőtáv = lőtáv;
     }
 
-    
     public Nyilas(int tamadoero, int vedoero, int lőtáv) {
         super(tamadoero, vedoero);
         this.lőtáv = lőtáv;
@@ -37,7 +37,7 @@ public class Nyilas extends Katona {
 
     @Override
     public String toString() {
-        return "Nyilas: TE:[" + this.getTamadoero() +"], VE:["+ this.getVedoero()+"]";
+        return "Nyilas: TE:[" + this.getTamadoero() + "], VE:[" + this.getVedoero() + "]";
     }
 
     @Override
@@ -48,22 +48,14 @@ public class Nyilas extends Katona {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || getClass() != obj.getClass()) {
+        if (obj == null || !(obj instanceof Nyilas)) {
             return false;
         }
-        
         final Nyilas other = (Nyilas) obj;
-        if ((this.lőtáv != other.lőtáv )&& (this.getVedoero() != other.getVedoero()) && (this.getTamadoero()) != other.getTamadoero()) {
+        if ((this.lőtáv != other.lőtáv) && (this.getVedoero() != other.getVedoero()) && (this.getTamadoero()) != other.getTamadoero()) {
             return false;
         }
         return true;
     }
-    
-    
-    
-    
-    
+
 }

@@ -13,7 +13,7 @@ public class Test {
 
     public static void rendezMaxSzállíthatóTeherCSökkenőleg(Teherautó[] teher) {
         for (int i = 0; i < teher.length - 1; i++) {
-            for (int j = i+1; j < teher.length; j++) {
+            for (int j = i + 1; j < teher.length; j++) {
                 if (teher[i].getMaxSzállíthatóTeher() < teher[j].getMaxSzállíthatóTeher()) {
                     Teherautó tmp = teher[i];
                     teher[i] = teher[j];
@@ -59,14 +59,14 @@ public class Test {
             new Teherautó("OHH-720", 3900, 7000),};
 
         Teherautó[] teher = new Teherautó[]{
-            new Teherautó("HER-232", 3000, 1),
+            new Teherautó("HER-232", 3000, 101),
             new Teherautó("YEH-919", 2800, 2),
-            new Teherautó("AAA-143", 5000, 3),
+            new Teherautó("AAA-143", 5000, 30),
             new Teherautó("ZSA-011", 4000, 4),
             new Teherautó("OHH-710", 3900, 5),
-            new Teherautó("HIM-222", 3000, 6),
-            new Teherautó("YAH-999", 2800, 7),
-            new Teherautó("ABA-123", 5000, 8),
+            new Teherautó("HIM-222", 3000, 60),
+            new Teherautó("YAH-999", 2800, 94),
+            new Teherautó("ABA-123", 5000, 80),
             new Teherautó("ZEA-001", 4000, 9),
             new Teherautó("OGH-720", 3900, 10),};
         keresMaxMotorTeljesítmény(auto);

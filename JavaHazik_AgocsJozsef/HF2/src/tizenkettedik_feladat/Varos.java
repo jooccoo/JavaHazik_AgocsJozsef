@@ -10,6 +10,7 @@ package tizenkettedik_feladat;
  * @author Jocó
  */
 public class Varos {
+
     private String name;
     private int temp;
 
@@ -30,6 +31,5 @@ public class Varos {
     public String toString() {
         return this.name + " (" + this.temp + ")";
     }
-    
-    
+
 }
